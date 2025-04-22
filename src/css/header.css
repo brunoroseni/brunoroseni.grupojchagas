@@ -1,0 +1,82 @@
+header {
+    width: 100%;
+    padding: 28px 8%;
+    background-color: var(--color-black);
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.5);
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+}
+#nav_logo{
+    height: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+ #nav_list {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+ }
+
+ .nav-item a {
+    text-decoration: none;
+    color: var(--color-white);
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+    color: var(--color-orange-dark);
+}
+
+.nav-item.active a {
+    color: var(--color-orange);
+    border-bottom: 3px solid var(--color-orange-dark);
+}
+
+#mobile_btn {
+    display: none;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+@media screen and (max-width: 920px) {
+    #nav_list,
+    #navbar .btn-primary {
+        display: none;
+    }
+    #mobile_btn {
+        display: block;
+        border: none;
+        color: var(--color-white);
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    #mobile_menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #mobile_nav_list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 0px;
+    }
+    #mobile_nav_list .nav-item {
+        list-style: none;
+        text-align: center;
+    } 
+    #nav_list#whatsapp,
+    #nav_list#brasaclub {
+        display: flex;
+    }
+}

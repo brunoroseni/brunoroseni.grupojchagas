@@ -1,0 +1,55 @@
+#our-brands {
+    background-color: #f8f9fa;
+    padding: 100px 0;
+    text-align: center;
+}
+#our-brands h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--color-orange-dark);
+}
+#brands {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.brand-item {
+    width: 150px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    }
+
+.brand-item img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(1);
+    transition: all 0.3s ease;
+}
+.brand-item img:hover {
+    transform: translateY(-2px);
+    transform: scale(1.2);
+    filter: grayscale(0);
+}
+
+@media screen and (max-width: 920px){
+    #brands {
+        flex-direction: column;
+        align-items: center;
+    }
+    .brand-item {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 600px) {
+    #our-brands {
+        padding: 50px 0;
+    }
+    #our-brands h2 {
+        font-size: 1.5rem;
+    }
+}
+/* Responsive design for smaller screens */

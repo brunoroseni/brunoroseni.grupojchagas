@@ -1,0 +1,94 @@
+#hero_brasaclub {
+    display: flex;
+    min-height: calc(100vh - 96px);
+    position: relative;
+    padding: 0 8%;
+}
+#cta_brasaclub {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 28px;
+    margin-top: 5%;
+}
+#cta_brasaclub img.title-brasa {
+    max-height: 80px;
+    width: fit-content;
+    border-radius: 10px;
+}
+#cta_brasaclub .description {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+    max-width: 600px;
+}
+#cta_buttonsbrasa {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+#cta_buttonsbrasa a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #000000; 
+    transition: all 0.3s ease;
+}
+#cta_buttonsbrasa a:hover {
+    background-color: #fff;
+    color: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+#banner_brasaclub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    z-index: 2;
+}
+
+#banner_brasaclub img {
+    height: 100%;
+    max-height: calc(100vh - 100px);
+
+}
+
+.shape-brasa {
+    background-color: rgba(37, 149, 190, 0.226);
+    filter: blur(120px);
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    border-radius: 40% 30% 0% 20%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+    #hero_brasaclub{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-bottom: 5vh;
+    }
+    #cta_brasaclub {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    #banner_brasaclub img {
+        max-height: 50vh;
+    }
+    #cta_buttonsbrasa a {
+        font-size: 0.9rem;
+        padding: 6px 10px;
+
+    }
+}

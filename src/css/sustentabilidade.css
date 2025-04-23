@@ -87,4 +87,23 @@
     font-weight: 600;
     text-align: center;
   }
+
+  @media screen and (max-width: 1000px) {
+   
+    #container_sustentabilidade {
+        flex-direction: column;
+        align-items: center;
+    }
+    #sustentabilidade #img_container{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+    }
+    #sustentabilidade #img_container img{
+        width: 100%;
+        height: auto;
+    }
+    
+  }
   

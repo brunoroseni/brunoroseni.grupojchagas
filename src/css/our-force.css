@@ -1,0 +1,65 @@
+#nossa_forca {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  #titulo_forca {
+    font-size: 2rem;
+    color: #2b2b2b;
+    margin-bottom: 40px;
+  }
+  
+  #container_forca {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  #conteudo_forca {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .card-forca {
+    background-color: #f4f4f4;
+    border-radius: 12px;
+    padding: 30px 20px;
+    flex: 1 1 220px;
+    max-width: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card-forca:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-forca i {
+    font-size: 2.5rem;
+    color: var(--color-orange-dark);
+    margin-bottom: 15px;
+  }
+  
+  .card-forca h3 {
+    font-size: 1.2rem;
+    color: #2b2b2b;
+    margin: 0;
+  }
+  
+  .card-forca p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-top: 8px;
+  }
+  
+  .card-forca span {
+    color: var(--color-orange);
+    font-weight: 700;
+  }
+  

@@ -13,16 +13,7 @@
     margin-bottom: 80px;
 }
 
-#main-history h2::after {
-    position: absolute;
-    content: ' ';
-    width: 50%;
-    height: 4px;
-    left: 50%;
-    bottom: -5px;
-    background-image: linear-gradient(to right, var(--color-orange-dark), var(--color-orange));
-    transform: translateX(-50%);
-}
+
 #container-history {
     width: 70%;
     height: auto;
@@ -162,4 +153,15 @@
     #container-history ul li:nth-child(even) {
         transform: translateX(0);
     }
+}
+
+#video{
+    background-color: var(--color-black);
+}
+
+#video-div{
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
